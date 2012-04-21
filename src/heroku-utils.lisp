@@ -3,12 +3,12 @@
 
 (in-package :easy-time-tracker)
 
-;; Database
-(defvar *database-url* (heroku-getenv "DATABASE_URL"))
-
 (defun heroku-getenv (target)
   #+ccl (ccl:getenv target)
   #+sbcl (sb-posix:getenv target))
+
+;; Database
+(defvar *database-url* (heroku-getenv "DATABASE_URL"))
 
 (defun db-params ()
   "Heroku database url format is postgres://username:password@host/database_name.
