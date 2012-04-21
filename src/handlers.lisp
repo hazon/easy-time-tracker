@@ -2,7 +2,7 @@
 (in-package :easy-time-tracker)
 
 ;; Static directory
-(push (hunchentoot:create-folder-dispatcher-and-handler "/static/" "/app/public/")
+(push (hunchentoot:create-folder-dispatcher-and-handler "/static/" "/app/static/")
 	 hunchentoot:*dispatch-table*)
 
 ;; Root handler
