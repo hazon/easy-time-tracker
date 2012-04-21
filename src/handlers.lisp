@@ -13,7 +13,7 @@
       (:title "Easy Time Tracker"))
      (:body
       (:h1 "Easy Time Tracker")
-      (:h3 "Using")
+      (:h3 "Work in progress...")
       (:ul
        (:li (format s "~A ~A" (lisp-implementation-type) (lisp-implementation-version)))
        (:li (format s "Hunchentoot ~A" hunchentoot::*hunchentoot-version*))
